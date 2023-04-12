@@ -37,11 +37,14 @@ public class saveContentServelt extends HttpServlet {
 		try {
 			String title = request.getParameter("title");
 			String content = request.getParameter("noteContent");
+			
+			// Hibernate -> Transient state as we just initialized the object to it in hibernate session object but not in DB.
 			Note noteDetails = new Note(0,title, content, new Date(), new Date());
-			System.out.println(noteDetails.toString());
+			
 			SessionFactory factory = FactoryProvider.getSessionFactory();
 			Session session = factory.openSession();
 			Transaction tx = session.beginTransaction();
+			// Hibernate -> Persistent state as now we will saving the object to DB so hibernate session and DB both have object.
 			session.save(noteDetails);
 			tx.commit();
 			session.close();
