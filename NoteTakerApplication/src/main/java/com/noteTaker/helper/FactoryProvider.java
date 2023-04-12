@@ -14,7 +14,7 @@ public class FactoryProvider {
 		return factory;
 	}
 	
-	public void closeSessionFactory() {
+	public static void closeSessionFactory() {
 		if(!factory.isClosed()) {
 			factory.close();
 		}

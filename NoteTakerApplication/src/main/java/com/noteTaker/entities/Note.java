@@ -18,6 +18,7 @@ public class Note {
 	private int noteId;
 	@Column(length = 100, name = "note_title")
 	private String noteTitle;
+	@Column(length = 2500)
 	private String noteContent;
 	private Date noteCreateDate;
 	private Date noteUpdateDate;

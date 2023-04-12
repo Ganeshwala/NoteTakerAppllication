@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>com.noteTaker.servlet.saveContentServelt</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>deleteNoteServlet</servlet-name>
+  	<display-name>deleteNoteServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.noteTaker.servlet.deleteNoteServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>saveContentServelt</servlet-name>
   	<url-pattern>/saveContentServelt</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>deleteNoteServlet</servlet-name>
+  	<url-pattern>/deleteNoteServlet</url-pattern>
   </servlet-mapping>
 </web-app>

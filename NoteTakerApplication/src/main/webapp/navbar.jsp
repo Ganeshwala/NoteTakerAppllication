@@ -13,7 +13,7 @@
           <a class="nav-link" href="addNotes.jsp">Add Note </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">show Notes</a>
+          <a class="nav-link" href="viewNotes.jsp" tabindex="-1" aria-disabled="true">show Notes</a>
         </li>
       </ul>
       <form class="d-flex">
