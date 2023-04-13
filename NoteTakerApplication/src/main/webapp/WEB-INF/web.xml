@@ -16,6 +16,12 @@
   	<description></description>
   	<servlet-class>com.noteTaker.servlet.deleteNoteServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>updateNoteServlet</servlet-name>
+  	<display-name>updateNoteServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.noteTaker.servlet.updateNoteServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>saveContentServelt</servlet-name>
   	<url-pattern>/saveContentServelt</url-pattern>
@@ -23,5 +29,9 @@
   <servlet-mapping>
   	<servlet-name>deleteNoteServlet</servlet-name>
   	<url-pattern>/deleteNoteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>updateNoteServlet</servlet-name>
+  	<url-pattern>/updateNoteServlet</url-pattern>
   </servlet-mapping>
 </web-app>

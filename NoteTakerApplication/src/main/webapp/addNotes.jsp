@@ -16,6 +16,10 @@
 		
 		<form action="saveContentServelt" method="post">
 		<h1>This is page for add notes</h1>
+		<div class="form-group">
+				<input type="text" name="noteId" value="0"
+					class="form-control" id="noteId" aria-describedby="emailHelp" hidden>
+			</div>
 			<div class="form-group">
 				<label for="title" class="form-label">Title</label> 
 				<input
