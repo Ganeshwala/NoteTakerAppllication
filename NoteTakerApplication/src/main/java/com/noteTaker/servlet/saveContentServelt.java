@@ -35,7 +35,7 @@ public class saveContentServelt extends HttpServlet {
 		//doGet(request, response);
 		
 		try {
-			int noteId = Integer.parseInt(request.getParameter("noteId"));
+			int noteId = Integer.parseInt(request.getParameter("noteId").trim());
 			System.out.println(noteId);
 			String title = request.getParameter("title");
 			System.out.println(title);
