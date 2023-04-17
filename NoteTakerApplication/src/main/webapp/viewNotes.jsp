@@ -17,8 +17,8 @@
 	<div class="container-fluid p-0 m-0 ">
 		<%@include file="navbar.jsp"%>
 	</div>
-	<div class="container mt-2">
-	<h3>View All Notes:</h3>
+	<div class="container p-3">
+	<h3><center>View Notes</center></h3>
 		<%
 		 SessionFactory factory = FactoryProvider.getSessionFactory();
 		Session se = factory.openSession();
